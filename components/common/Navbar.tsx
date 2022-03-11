@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import {Footer} from './Footer';
+import {SwapThemes} from './SwapThemes';
 
 type Props = {
    children: React.ReactNode;
@@ -20,34 +21,39 @@ export const Navbar = ({children}: Props) => {
                            </svg>
                         </label>
                      </div>
-                     {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
+                     <Link href="/">
+                        <a className="btn btn-ghost normal-case text-xl">Portfolio</a>
+                     </Link>
                   </div>
                   <div className="navbar-center hidden lg:flex ">
                      <ul className="menu menu-horizontal p-0 ">
                         <li>
                            <Link href="/#About">
-                              <a className="btn btn-ghost">About me</a>
+                              <a className="btn btn-ghost normal-case text-base">About me</a>
                            </Link>
                         </li>
                         <li>
                            <Link href="/#Projects">
-                              <a className="btn btn-ghost">Projects</a>
+                              <a className="btn btn-ghost normal-case text-base">Projects</a>
                            </Link>
                         </li>
 
                         <li>
                            <Link href="/#Skills">
-                              <a className="btn btn-ghost">Skills</a>
+                              <a className="btn btn-ghost normal-case text-base">Skills</a>
                            </Link>
                         </li>
                         <li>
                            <Link href="/#Contact">
-                              <a className="btn btn-ghost">Contact</a>
+                              <a className="btn btn-ghost normal-case text-base">Contact</a>
                            </Link>
                         </li>
                      </ul>
                   </div>
-                  <div className="navbar-end">{/* <a className="btn">Get started</a> */}</div>
+                  <div className="navbar-end ">
+                     <SwapThemes />
+                     {/* <a className="btn">Get started</a> */}
+                  </div>
                </nav>
 
                {children}
@@ -58,23 +64,23 @@ export const Navbar = ({children}: Props) => {
                <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
                   <li>
                      <Link href="/#About">
-                        <a className="btn btn-ghost">About me</a>
+                        <a className="btn btn-ghost normal-case text-base">About me</a>
                      </Link>
                   </li>
                   <li>
                      <Link href="/#Projects">
-                        <a className="btn btn-ghost">Projects</a>
+                        <a className="btn btn-ghost normal-case text-base">Projects</a>
                      </Link>
                   </li>
 
                   <li>
                      <Link href="/#Skills">
-                        <a className="btn btn-ghost">Skills</a>
+                        <a className="btn btn-ghost normal-case text-base">Skills</a>
                      </Link>
                   </li>
                   <li>
                      <Link href="/#Contact">
-                        <a className="btn btn-ghost">Contact</a>
+                        <a className="btn btn-ghost normal-case text-base">Contact</a>
                      </Link>
                   </li>
                </ul>
