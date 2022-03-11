@@ -7,10 +7,7 @@ type Props = {
 export function MainLayout({children}: Props) {
    return (
       <>
-         {/* <div className="flex flex-col h-screen "> */}
          <Navbar>{children}</Navbar>
-         {/* // <div className="flex-grow"></div> */}
-         {/* </div> */}
       </>
    );
 }
