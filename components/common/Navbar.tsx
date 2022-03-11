@@ -33,6 +33,11 @@ export const Navbar = ({children}: Props) => {
                            </Link>
                         </li>
                         <li>
+                           <Link href="/#Education">
+                              <a className="btn btn-ghost normal-case text-base">Education</a>
+                           </Link>
+                        </li>
+                        <li>
                            <Link href="/#Projects">
                               <a className="btn btn-ghost normal-case text-base">Projects</a>
                            </Link>
@@ -65,6 +70,11 @@ export const Navbar = ({children}: Props) => {
                   <li>
                      <Link href="/#About">
                         <a className="btn btn-ghost normal-case text-base">About me</a>
+                     </Link>
+                  </li>
+                  <li>
+                     <Link href="/#Education">
+                        <a className="btn btn-ghost normal-case text-base">Education</a>
                      </Link>
                   </li>
                   <li>

@@ -1,5 +1,4 @@
-import {Children, ReactNode} from 'react';
-import {Footer} from '../common/Footer';
+import {ReactNode} from 'react';
 import {Navbar} from '../common/Navbar';
 type Props = {
    children: ReactNode;

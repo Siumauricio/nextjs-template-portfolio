@@ -8,6 +8,9 @@ export const Footer = () => {
             <Link href="/#About">
                <a className="link link-hover">About me</a>
             </Link>
+            <Link href="/#Education">
+               <a className="link link-hover">Education</a>
+            </Link>
             <Link href="/#Projects">
                <a className="link link-hover">Projects</a>
             </Link>

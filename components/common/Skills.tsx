@@ -7,7 +7,7 @@ import {BsGithub} from 'react-icons/bs';
 
 export const Skills = () => {
    return (
-      <section className="bg-base-200 pb-14 flex  items-center flex-col pt-5 border-b border-base-300" id="Skills">
+      <section className="bg-base-200 pb-14 flex  items-center flex-col pt-5 border-b border-base-300">
          <h2 className="sm:text-3xl text-2xl font-bold pb-7 ">Skills</h2>
          <div className="flex max-w-2xl bg-base-300  rounded-2xl shadow-lg shadow-base-100 ">
             {/* <div className="w-[4324px] bg-error">  <DiCss3 className="w-12 h-12 "color="699bf7" />

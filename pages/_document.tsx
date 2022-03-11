@@ -11,8 +11,6 @@ class MyDocument extends Document {
       return (
          <Html lang="es" data-theme="luxury">
             <Head>
-               <meta name="theme-color" content="#ffffff" />
-               <meta name="theme-color" content="#3d4451" />
                <link rel="preconnect" href="https://fonts.gstatic.com" />
                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
             </Head>
