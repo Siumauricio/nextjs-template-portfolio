@@ -6,11 +6,11 @@ import Image from 'next/image';
 
 export const Projects = () => {
    return (
-      <section className="bg-base-200 pb-14 flex  items-center flex-col pt-5 border-b border-base-300" id="Projects">
+      <section className="bg-base-200 pb-14 flex  items-center flex-col pt-5 border-b border-base-300 ">
          <h2 className="sm:text-3xl text-2xl font-bold pb-7">Projects</h2>
-         <div className="grid xl:grid-cols-3 gap-14">
+         <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-14 sm:px-2 md:px-2 px-2 ">
             {ProjectsData.map((project, index) => (
-               <div className="card w-96  shadow-2xl image-full shadow-base-100" key={index}>
+               <div className="card w-full md:w-80  shadow-2xl image-full shadow-base-100" key={index}>
                   <figure className="relative">
                      <Image quality={100} layout="fill" src={project.image} alt="Shoes" className="blur-md" priority />
                   </figure>

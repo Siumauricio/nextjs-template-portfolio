@@ -5,7 +5,7 @@ import {BsGithub, BsLinkedin} from 'react-icons/bs/index';
 export const HomePage = () => {
    return (
       // from-primary to-slate-900 text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-br pt-20
-      <div className="hero  bg-base-200 sm:pt-28 pt-5 border-b border-base-300" id="About">
+      <div className="hero  bg-base-200 sm:pt-20 pt-5 border-b border-base-300" id="About">
          <div className="hero-content text-center">
             <div className="max-w-4xl">
                <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold pb-7">Hi, I am Mauricio Siu.</h1>
@@ -16,7 +16,7 @@ export const HomePage = () => {
                      cumque perspiciatis! Maiores minima consectetur.
                   </p>
                </div>
-               <div className="flex justify-center gap-2">
+               <div className="flex justify-center gap-2" id="Projects">
                   <Link href="https://github.com/Siumauricio">
                      <a className="btn btn-ghost" target="_blank">
                         <BsGithub className="w-7 h-7 " />
