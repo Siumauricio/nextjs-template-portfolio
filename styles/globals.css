@@ -1,11 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html,
-body {
-   padding: 0;
-   margin: 0;
-}
 
 a {
    color: inherit;
@@ -14,4 +9,24 @@ a {
 
 * {
    box-sizing: border-box;
+}
+.estils {
+   white-space: nowrap;
+   width: 15ch;
+   width: 100%;
+
+   animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+   overflow: hidden;
+}
+
+@keyframes typing {
+   from {
+      width: 0;
+   }
+}
+
+@keyframes blink {
+   50% {
+      border-color: transparent;
+   }
 }

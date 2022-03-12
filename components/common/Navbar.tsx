@@ -28,28 +28,28 @@ export const Navbar = ({children}: Props) => {
                   <div className="navbar-center hidden lg:flex ">
                      <ul className="menu menu-horizontal p-0 ">
                         <li>
-                           <Link href="/#About">
+                           <Link href="#About">
                               <a className="btn btn-ghost normal-case text-base">About me</a>
                            </Link>
                         </li>
                         <li>
-                           <Link href="/#Education">
+                           <Link href="#Education">
                               <a className="btn btn-ghost normal-case text-base">Education</a>
                            </Link>
                         </li>
                         <li>
-                           <Link href="/#Projects">
+                           <Link href="#Projects">
                               <a className="btn btn-ghost normal-case text-base">Projects</a>
                            </Link>
                         </li>
 
                         <li>
-                           <Link href="/#Skills">
+                           <Link href="#Skills">
                               <a className="btn btn-ghost normal-case text-base">Skills</a>
                            </Link>
                         </li>
                         <li>
-                           <Link href="/#Contact">
+                           <Link href="#Contact">
                               <a className="btn btn-ghost normal-case text-base">Contact</a>
                            </Link>
                         </li>
@@ -61,35 +61,37 @@ export const Navbar = ({children}: Props) => {
                   </div>
                </nav>
 
-               {children}
-               <Footer />
+               <div className="w-full">
+                  {children}
+                  <Footer />
+               </div>
             </div>
             <div className="drawer-side">
                <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
                <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
                   <li>
-                     <Link href="/#About">
+                     <Link href="#About">
                         <a className="btn btn-ghost normal-case text-base">About me</a>
                      </Link>
                   </li>
                   <li>
-                     <Link href="/#Education">
+                     <Link href="#Education">
                         <a className="btn btn-ghost normal-case text-base">Education</a>
                      </Link>
                   </li>
                   <li>
-                     <Link href="/#Projects">
+                     <Link href="#Projects">
                         <a className="btn btn-ghost normal-case text-base">Projects</a>
                      </Link>
                   </li>
 
                   <li>
-                     <Link href="/#Skills">
+                     <Link href="#Skills">
                         <a className="btn btn-ghost normal-case text-base">Skills</a>
                      </Link>
                   </li>
                   <li>
-                     <Link href="/#Contact">
+                     <Link href="#Contact">
                         <a className="btn btn-ghost normal-case text-base">Contact</a>
                      </Link>
                   </li>
