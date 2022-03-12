@@ -8,6 +8,7 @@ module.exports = {
    },
    plugins: [require('daisyui')],
    daisyui: {
+      styled: true,
       themes: [
          'light',
          'dark',
@@ -39,5 +40,9 @@ module.exports = {
          'coffee',
          'winter',
       ],
+      base: true,
+      utils: true,
+      logs: true,
+      rtl: false,
    },
 };

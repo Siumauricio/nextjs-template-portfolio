@@ -14,7 +14,7 @@ export const HomePage = () => {
                   <h1 className="sm:text-3xl text-2xl font-bold ">A Full Stack Developer.</h1>
 
                   <div className="max-w-md mx-auto">
-                     <p className="py-6 ">
+                     <p className="py-6 w-auto">
                         Software developer with more than 3 years of experience in the development of personal applications, with solid knowledge in the programming area to deliver quality products
                         and on time, I have a great motivation to solve problems and I focus everyday learning something new and improving on what I am passionate about.
                      </p>

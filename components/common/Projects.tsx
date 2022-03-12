@@ -81,6 +81,13 @@ const ProjectsData = [
       github: 'https://github.com/Siumauricio/GifApp',
    },
    {
+      title: 'Tailwind Auto Applier Prefixer',
+      description: 'Application to apply prefixes to files automatically, built with React, Bootstrap and NodeJS',
+      image: '/Gif-App.png',
+      preview: 'https://tailwind-autoprefixer-applier-files.netlify.app/',
+      github: 'https://github.com/Siumauricio/Tailwind-AutoPrefix-Applicator-Files',
+   },
+   {
       title: 'Portfolio',
       description: 'Simple Portfolio App, built with NextJS, TailwindCSS with DaisyUI.',
       image: '/Gif-App.png',
