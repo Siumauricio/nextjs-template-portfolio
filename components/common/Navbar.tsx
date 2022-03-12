@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import React, {useCallback} from 'react';
 import {Footer} from './Footer';
 import {SwapThemes} from './SwapThemes';
 
@@ -7,6 +7,20 @@ type Props = {
    children: React.ReactNode;
 };
 export const Navbar = ({children}: Props) => {
+   const handleClick = useCallback((e) => {
+      e.preventDefault();
+      const pathSplit = e.target.href.split('#');
+      const destination = document.querySelector('#' + pathSplit[1]);
+      if (destination) {
+         destination.scrollIntoView({
+            behavior: 'smooth',
+         });
+      }
+   }, []);
+   const closeDrawer = () => {
+      const ele = document.querySelector('#my-drawer-3') as HTMLInputElement;
+      ele.checked = false;
+   };
    return (
       <>
          <div className="drawer w-full">
@@ -21,36 +35,48 @@ export const Navbar = ({children}: Props) => {
                            </svg>
                         </label>
                      </div>
-                     <Link href="/">
-                        <a className="btn btn-ghost normal-case text-xl">Portfolio</a>
+                     <Link href="#main">
+                        <a className="btn btn-ghost normal-case text-xl" onClick={handleClick}>
+                           Portfolio
+                        </a>
                      </Link>
                   </div>
                   <div className="navbar-center hidden lg:flex ">
                      <ul className="menu menu-horizontal p-0 ">
                         <li>
                            <Link href="#About">
-                              <a className="btn btn-ghost normal-case text-base">About me</a>
+                              <a className="btn btn-ghost normal-case text-base" onClick={handleClick}>
+                                 About me
+                              </a>
                            </Link>
                         </li>
                         <li>
                            <Link href="#Education">
-                              <a className="btn btn-ghost normal-case text-base">Education</a>
+                              <a className="btn btn-ghost normal-case text-base" onClick={handleClick}>
+                                 Education
+                              </a>
                            </Link>
                         </li>
                         <li>
                            <Link href="#Projects">
-                              <a className="btn btn-ghost normal-case text-base">Projects</a>
+                              <a className="btn btn-ghost normal-case text-base" onClick={handleClick}>
+                                 Projects
+                              </a>
                            </Link>
                         </li>
 
                         <li>
                            <Link href="#Skills">
-                              <a className="btn btn-ghost normal-case text-base">Skills</a>
+                              <a className="btn btn-ghost normal-case text-base" onClick={handleClick}>
+                                 Skills
+                              </a>
                            </Link>
                         </li>
                         <li>
                            <Link href="#Contact">
-                              <a className="btn btn-ghost normal-case text-base">Contact</a>
+                              <a className="btn btn-ghost normal-case text-base" onClick={handleClick}>
+                                 Contact
+                              </a>
                            </Link>
                         </li>
                      </ul>
@@ -71,28 +97,68 @@ export const Navbar = ({children}: Props) => {
                <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
                   <li>
                      <Link href="#About">
-                        <a className="btn btn-ghost normal-case text-base">About me</a>
+                        <a
+                           className="btn btn-ghost normal-case text-base"
+                           onClick={(e) => {
+                              handleClick(e);
+                              closeDrawer();
+                           }}
+                        >
+                           About me
+                        </a>
                      </Link>
                   </li>
                   <li>
                      <Link href="#Education">
-                        <a className="btn btn-ghost normal-case text-base">Education</a>
+                        <a
+                           className="btn btn-ghost normal-case text-base"
+                           onClick={(e) => {
+                              handleClick(e);
+                              closeDrawer();
+                           }}
+                        >
+                           Education
+                        </a>
                      </Link>
                   </li>
                   <li>
                      <Link href="#Projects">
-                        <a className="btn btn-ghost normal-case text-base">Projects</a>
+                        <a
+                           className="btn btn-ghost normal-case text-base"
+                           onClick={(e) => {
+                              handleClick(e);
+                              closeDrawer();
+                           }}
+                        >
+                           Projects
+                        </a>
                      </Link>
                   </li>
 
                   <li>
                      <Link href="#Skills">
-                        <a className="btn btn-ghost normal-case text-base">Skills</a>
+                        <a
+                           className="btn btn-ghost normal-case text-base"
+                           onClick={(e) => {
+                              handleClick(e);
+                              closeDrawer();
+                           }}
+                        >
+                           Skills
+                        </a>
                      </Link>
                   </li>
                   <li>
                      <Link href="#Contact">
-                        <a className="btn btn-ghost normal-case text-base">Contact</a>
+                        <a
+                           className="btn btn-ghost normal-case text-base"
+                           onClick={(e) => {
+                              handleClick(e);
+                              closeDrawer();
+                           }}
+                        >
+                           Contact
+                        </a>
                      </Link>
                   </li>
                </ul>

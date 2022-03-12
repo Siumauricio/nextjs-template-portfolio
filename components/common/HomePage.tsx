@@ -6,7 +6,7 @@ import FadeIn from 'react-fade-in';
 export const HomePage = () => {
    return (
       // from-primary to-slate-900 text-primary-content -mt-[4rem] grid place-items-center items-end bg-gradient-to-br pt-20
-      <div className="hero  bg-base-200 sm:pt-20 pt-5 border-b border-base-300" id="About">
+      <div className="hero  bg-base-200 sm:pt-20 pt-5 border-b border-base-300 " id="About">
          <div className="hero-content text-center">
             <div className="max-w-4xl">
                <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold pb-7 estils sm:border-r-4 border-r border-base-300"> Hi, I am Mauricio Siu.</h1>

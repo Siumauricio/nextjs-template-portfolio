@@ -8,7 +8,7 @@ import {Skills} from '../components/common/Skills';
 
 const Home: NextPage = () => {
    return (
-      <main>
+      <main id="main">
          <Head>
             <title>Mauricio Siu | Portfolio</title>
             <meta name="description" content="This is related about all my information like skills, projects and about me. " />

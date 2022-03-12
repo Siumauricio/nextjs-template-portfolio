@@ -15,7 +15,7 @@ export const Skills = () => {
                <div className="flex max-w-2xl bg-base-300  rounded-2xl shadow-lg shadow-base-100 ">
                   {/* <div className="w-[4324px] bg-error">  <DiCss3 className="w-12 h-12 "color="699bf7" />
                         <span className="self-center">CSS</span></div> */}
-                  <div className="grid sm:grid-cols-2 grid-cols-1 w-full sm:gap-20  self-center sm:px-20 px-10 py-10">
+                  <div className="grid sm:grid-cols-2 grid-cols-1 w-full sm:gap-20  self-center px-20 py-10">
                      <div className="flex  flex-col w-full">
                         <div className="flex flex-col  items-start ">
                            <div className="py-2 flex">
